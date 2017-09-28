@@ -3,7 +3,7 @@
 
 this port is initially based on original settings & restrictions from [prestashop bundle](https://www.prestashop.com/en/download) aimed at [apache httpd](https://httpd.apache.org/)
 
-v2 has been completely revised & improved &mdash; the ruleset has been rearranged in native [nginx](https://nginx.org/) way to utilize its power, thus forcing pages to load up to 5-10x faster<sup>[1](#f1)</sup>
+v2 has been completely revised & improved &mdash; the ruleset has been rearranged in native [nginx](https://nginx.org/) way to utilize its power, thus forcing pages to load up to 5-10x faster<sup id="a1">[1](#f1)</sup>
 
 <strong>[nb]</strong> the last rule at [fpm-prestashop.conf](fpm-prestashop.conf) assumes the ``upstream`` block w/ name ``php`` is declared at ``http`` section of your ``nginx.conf``
 
@@ -35,7 +35,7 @@ security.limit_extensions = .php
 
 ```
 
-<strong id="f1">[1]</strong> the lion's share of the boost is achieving due to replacement of the snail ``rewrite`` rules w/ the rapid ``return`` / ``try_files`` ones
+<strong id="f1">[1]</strong> the lion's share of the boost is achieving due to replacement of the snail ``rewrite`` rules w/ the rapid ``return`` / ``try_files`` ones[↺](#a1)
 
 **glory to Ukraine!** 🇺🇦
 
