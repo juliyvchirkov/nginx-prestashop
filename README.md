@@ -9,7 +9,7 @@ v2 has been completely revised & improved &mdash; the ruleset has been rearrange
 
 if not, you gotta declare it this way to get the whole thing working properly
 
-```
+```nginx
 
         upstream php {
             
@@ -27,7 +27,7 @@ for example, if your ``php-fpm`` daemon is running w/ default pool settings like
 
 one more & last thing on ``php-fpm`` daemon pool config &mdash; it's highly recommended for security purposes either to leave the line ``security.limit_extensions`` commented or to uncomment it & set (cut) the value exactly to ``.php`` removing the rest 
 
-```
+```php
 
 ;security.limit_extensions = .php .php3 .php4 .php5
 
