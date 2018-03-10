@@ -1,3 +1,7 @@
-*.DS_Store
-*.localized
-*Icon*
+.DS_Store
+.localized
+._*
+.TemporaryItems
+*.log*
+*~
+*.save
